@@ -1,10 +1,9 @@
 use retail_events_db;
-drop database retail_events_db;
 select * from dim_campaigns;
 select * from dim_products;
 select * from dim_stores;
 select * from fact_events;
-DROP TABLE IF EXISTS `fact_events`;
+
 -----
 /* 1. Provide a list of products with a base price greater than 500 and that are featured in promo type BOGOF("Buy One Get One Free)*/ SELECT DISTINCT(promo_type) from fact_events;
 
